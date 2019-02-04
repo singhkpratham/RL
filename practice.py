@@ -12,11 +12,16 @@ register(
 
 env = gym.make("FrozenLakeNotSlippery-v0")
 
-env = gym.make("Pong-v0")
+# env = gym.make("Pong-v0")
+
+
+
+
 env.reset()
 
 for _ in range(200):
     time.sleep(0.05)
     env.render()
     env.step(env.action_space.sample())
+
 
